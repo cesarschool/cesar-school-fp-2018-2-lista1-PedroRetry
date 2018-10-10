@@ -10,9 +10,12 @@
 # Para a correta execução do programa, a estrutura atual deve ser mantida,
 # substituindo apenas o comando print(questão...) existente.
 ##
+from math import pi
 def main():
-    p = float(input('quantos graus está nesse momento?')) #p=pergunta e f=fórmula
-    f = 1.8*p+32
-    print('lá fora está', p, 'graus em celsius', 'e', f, 'graus em fahrenheit')
+    r = float(input('quer saber a medidas do seu circulo,então de me diga o raio:'))
+    a = pi*r**2
+    d = r*2
+    c = 2*pi*r
+    print('parabéns você descobrio a área:', a, 'o diâmetro:', d, 'e o compremento:', c, 'do seu circulo')
 if __name__ == '__main__':
     main()
